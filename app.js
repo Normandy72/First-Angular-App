@@ -1,6 +1,12 @@
-// IIFE - immediately invoked function expression
 (function(){
     'use strict';
+
     angular.module('myFirstApp', [])
-    .controller('myFirstController', function(){});
+
+    .controller('myFirstController', function($scope){
+        $scope.name = 'Kate';
+        $scope.sayHello = function(){
+            return 'Hello, Coursera!';
+        }
+    });
 })();
