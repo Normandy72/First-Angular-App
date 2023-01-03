@@ -1,0 +1,12 @@
+Sequence:
+1. create index.html
+2. create app.js
+3. download angular.min.js
+4. in index.html add scripts (first - angular.min.js,second - app.js)
+5. in app.js create IIFE
+6. in IIFE create angular function: angular.module('name_of_app', []) - first attribute is name of app,second attribute is array; without semicolon in the end
+7. in index.html in tag html add attribute ng-app='name_of_app'
+8. add div in body of html file
+9. in app.js ann .controller('name_of_controller', function(){...}) - first attribute is name of controller, second attribute is function that defines functionality of controller.
+10. in tag div add attribute ng-controller="name_of_controller"
+11. add 'use strict' at the beginning of IIFE
